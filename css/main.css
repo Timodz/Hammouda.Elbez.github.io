@@ -69,14 +69,14 @@ dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
 /* HYPERLINKS */
 a { 
   text-decoration: none;
-  color: #E74C3C;
+  color: rgb(60, 86, 231);
   -webkit-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -moz-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -ms-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   -o-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
   transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 }
-a:hover, a:focus, a:active { text-decoration: none; border: none;color: #C0392B }
+a:hover, a:focus, a:active { text-decoration: none; border: none;color: rgb(37, 60, 192) }
 /* MEDIA */
 figure {margin: 0}
 img, object, embed, video {max-width: 100%; _width: 100%} /* Fluid images */
@@ -91,8 +91,8 @@ ins, mark {text-decoration: none}
 mark {background: #c47529}
 ins {background: #d49855}
 del {text-decoration: line-through}
-::-moz-selection {background: #E74C3C; color: #fff; text-shadow: none} /* selected text */
-::selection {background: #E74C3C; color: #fff; text-shadow: none} /* selected text */
+::-moz-selection {background: rgb(37, 60, 192); color: #fff; text-shadow: none} /* selected text */
+::selection {background: rgb(37, 60, 192); color: #fff; text-shadow: none} /* selected text */
 
 /* OTHERS */
 strong, b, dt { font-weight: bold}
@@ -111,9 +111,9 @@ span.amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","
 /* DEFAULT MOBILE STYLE */
 body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* column grid */
-.g1,.g2,.g3{display:block; position: relative; margin-left: 1%; margin-right: 1%}
+.g1,.g2,.g3,.g4{display:block; position: relative; margin-left: 1%; margin-right: 1%}
 /* 1 column grid */
-.g1,.g2,.g3{width:98.0%}
+.g1,.g2,.g3,.g4{width:98.0%}
 
 /* Wrapper */
 .main{
@@ -195,7 +195,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   padding: 30px 20px;
   background: #fff;
   border: 1px solid #f1f1f1;
-  box-shadow: 0px 6px #c0392b;
+  box-shadow: 0px 6px rgb(37, 60, 192);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -237,7 +237,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 .tab a.active {
   padding-top: 10px;
-  color: #e74c3c;
+  color: rgb(37, 60, 192);
 }
 .tab a i{
   font-size: 16px;
@@ -367,7 +367,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   overflow: hidden;
   width: 100%;
   height: 99%;
-  background-color: rgba(71, 60, 231, 0.6);
+  background-color: rgba(255, 64, 64, 0.719);
   text-align: center;
   opacity:0;
   filter: alpha(opacity=0);
@@ -379,16 +379,6 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-p.event_desc {
-  font: bold 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 14px;
-  height:75px;
-  margin: 0px;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 10px;
-  border: 1px solid #f00;
 }
 .image:hover .image-overlay{
   opacity: 1;
@@ -660,10 +650,11 @@ Change widths as necessary
    border-left: 1px solid #f1f1f1;
  }
  /* COLUMN GRID */
- .g1,.g2,.g3 {display:inline; float: left}
+ .g1,.g2,.g3,.g4 {display:inline; float: left}
 
  /* 2 COLUMN GRID */
  .g1 {width:48.0%}
+ .g4 {width:46%}
  .g2 {width:48.0%}
  .g3 {width:98.0%}
 }
@@ -687,7 +678,8 @@ Change widths as necessary
   padding-top: 20px;
 }
   /* 3 COLUMN GRID */
-  .g1 {width:48%}
+  .g1 {width:31.333%}
+  .g4 {width:46%}
   .g2 {width:64.667%;}
   .g3 {width:98.0%}
 }
